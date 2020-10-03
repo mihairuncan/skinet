@@ -1,6 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <Compile Remove="Data\Migrations\20200930190039_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20200930190039_InitialCreate.Designer.cs" />
+    <Compile Remove="Data\Migrations\20201001173220_InitialCreate.cs" />
+    <Compile Remove="Data\Migrations\20201001173220_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
