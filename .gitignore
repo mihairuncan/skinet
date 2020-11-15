@@ -12,6 +12,7 @@
 
 bin
 *.db
+*.rdb
 **/appsettings.json
 **/appsettings.Development.json
 
