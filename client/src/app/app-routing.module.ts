@@ -48,6 +48,13 @@ const routes: Routes = [
       import('./account/account.module').then((mod) => mod.AccountModule),
     data: { breadcrumb: { skip: true } },
   },
+  {
+    path: 'orders',
+    canActivate: [AuthGuard],
+    loadChildren: () =>
+      import('./orders/orders.module').then((mod) => mod.OrdersModule),
+    data: { breadcrumb: 'Orders' },
+  },
   { path: '**', redirectTo: 'not-found', pathMatch: 'full' },
 ];
 
@@ -55,4 +62,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

@@ -6,7 +6,6 @@ using Core.Entities.OrderAggregate;
 using Core.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.FileProviders;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
