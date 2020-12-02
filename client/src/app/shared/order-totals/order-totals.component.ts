@@ -1,7 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
-import { BasketService } from 'src/app/basket/basket.service';
-import { IBasketTotals } from '../models/basket';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-order-totals',
@@ -15,7 +12,7 @@ export class OrderTotalsComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }

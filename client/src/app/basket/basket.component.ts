@@ -11,6 +11,9 @@ import { BasketService } from './basket.service';
 export class BasketComponent implements OnInit {
   basketTotals$: Observable<IBasketTotals>;
   basket$: Observable<IBasket>;
+  clientSecret?: string;
+  paymentIntentId?: string;
+  deliveryMethodId?: number;
 
   constructor(private basketService: BasketService) { }
 
