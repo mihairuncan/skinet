@@ -1,35 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
-  <ItemGroup>
-    <Compile Remove="Data\Migrations\20200930190039_InitialCreate.cs" />
-    <Compile Remove="Data\Migrations\20200930190039_InitialCreate.Designer.cs" />
-    <Compile Remove="Data\Migrations\20201001173220_InitialCreate.cs" />
-    <Compile Remove="Data\Migrations\20201001173220_InitialCreate.Designer.cs" />
-    <Compile Remove="Identity\Migrations\20201119193550_IdentityInitial.cs" />
-    <Compile Remove="Identity\Migrations\20201119193550_IdentityInitial.Designer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.1" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
-    <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
-    <PackageReference Include="Stripe.net" Version="39.28.0" />
-    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
-
+	<ItemGroup>
+		<None Include="Data\SeedData\**" CopyToOutputDirectory="PreserveNewest" />
+		<ProjectReference Include="..\Core\Core.csproj"/>
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1"/>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.1"/>
+		<PackageReference Include="StackExchange.Redis" Version="2.0.601"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0"/>
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.1"/>
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="5.6.0"/>
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0"/>
+		<PackageReference Include="Stripe.net" Version="34.19.0"/>
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1"/>
+	</ItemGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+	</PropertyGroup>
 </Project>

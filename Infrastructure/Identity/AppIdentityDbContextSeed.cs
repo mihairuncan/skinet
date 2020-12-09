@@ -13,13 +13,13 @@ namespace Infrastructure.Identity
             {
                 var user = new AppUser
                 {
-                    DisplayName = "Bob",
-                    Email = "bob@test.com",
-                    UserName = "bob@test.com",
+                    DisplayName = "Mihai",
+                    Email = "runcan.mihai@gmail.com",
+                    UserName = "mihai",
                     Address = new Address
                     {
-                        FirstName = "Bob",
-                        LastName = "Bobbity",
+                        FirstName = "Mihai",
+                        LastName = "Runcan",
                         Street = "10 The street",
                         City = "New York",
                         State = "NY",
